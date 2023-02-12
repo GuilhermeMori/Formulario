@@ -37,6 +37,8 @@ function validateForm() {
   window.open(url, "_self"); // abre a URL em uma nova janela do navegador
 
   return false; // retorna "false" para cancelar o comportamento padrão do evento que acionou a função.
+
+  // Verifica se o número de telefone tem menos de 10 dígitos
 }
 
 // Função mascara de telefone
@@ -46,7 +48,7 @@ function formatPhone(input) {
 
   // Cria do formato brasileiro de telefone (XX) XXXXX-XXXX
   const formattedPhoneNumber = phoneNumber.replace(
-    /(\d{2})(\d{5})(\d{4})/,
+    /(\d{2})(\d{4})(\d{4})/,
     "($1)$2-$3"
   );
   // Define o valor do input com a máscara formatada
