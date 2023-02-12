@@ -16,7 +16,7 @@
   <p>Formulário </p>
   <form onsubmit="return validateForm()">
     <label for="full-name">NOME COMPLETO:</label>
-    <input type="text" id="full-name" name="full-name" pattern="[a-zA-Z ]{1,100}" maxlength="100" required>
+    <input type="text" id="full-name" name="full-name" maxlength="100" pattern="[a-zA-Z ]+" onkeypress="return lettersOnly(event);" required>
     <label for="phone">TELEFONE:</label>
     <input type="tel" id="phone" name="phone" oninput="formatPhone(this)" maxlength="11" required>
     <label for="email">EMAIL:</label>
