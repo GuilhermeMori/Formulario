@@ -10,6 +10,11 @@ function validateForm() {
   var condicao2 = number % 5 === 0; // Se o numeber for divisel por 5, irá aparecer o DDD digitado no campo telefone na tela result
   var condicao3 = number % 7 === 0; // Se o numeber for divisel por 7, irá aparecer o dominio de email digitado no campo email na tela result
 
+  if (phone.length < 10) {
+    // Se o número de telefone tiver menos de 10 dígitos, exibe uma mensagem de erro
+    alert("Preencha o número de telefone corretamente.");
+    return;
+  }
   // Verifica se o "numero" atende algumas da condições do exercicio.
   let result = "";
 
