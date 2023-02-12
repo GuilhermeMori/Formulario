@@ -2,24 +2,6 @@
   display: flex;
   height: 100vh;
   margin: auto;
-  padding: 0;
+  padding: 0 100px;
   color: #000;
-}
-
-.resultado-botao {
-  display: flex;
-  margin: auto;
-  background-color: #0077b6;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: point er;
-  transition: background-color 0.3s;
-  color: #fff;
-  border-color: #0077b6;
-}
-
-button:hover {
-  background-color: #023e8a;
-  border-color: #023e8a;
 }

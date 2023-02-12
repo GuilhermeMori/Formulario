@@ -4,20 +4,19 @@
   align-items: center;
   margin: 20px auto;
   max-width: 600px;
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f0f7ff;
   border-color: #7da7d9;
   color: #333;
-  margin-top: 50px;
 }
 
-label {
-  margin-bottom: 10px;
+.label-texto {
+  margin-bottom: 15px;
 }
 
-input {
+.entrada {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -29,7 +28,7 @@ input {
   color: #333;
 }
 
-button {
+.botao {
   background-color: #0077b6;
   color: #fff;
   border: none;
@@ -37,18 +36,10 @@ button {
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
-  color: #fff;
   border-color: #0077b6;
 }
 
-button:hover {
+.botao:hover {
   background-color: #023e8a;
   border-color: #023e8a;
-}
-
-p {
-  text-align: center;
-  margin: 40px 0px;
-  padding: 0px;
-  color: #4182c4;
 }

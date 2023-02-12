@@ -11,18 +11,18 @@
 
 </head>
 
-<body>
+<body class="body">
   <p class="font-1-xxl">Formulário </p>
   <form class="formulario-index" onsubmit="return validateForm()">
-    <label class="font-1-m" for="full-name">NOME COMPLETO:</label>
-    <input type="text" id="full-name" name="full-name" maxlength="100" pattern="[a-zA-Z ]+" onkeypress="return lettersOnly(event);" required>
-    <label class="font-1-m" for="phone">TELEFONE:</label>
-    <input type="tel" id="phone" name="phone" oninput="formatPhone(this)" maxlength="11" required>
-    <label class="font-1-m" for="email">EMAIL:</label>
-    <input type="email" id="email" name="email" required>
-    <label class="font-1-m" for="number">NUMERO:</label>
-    <input type="number" id="number" name="number" min="1" max="999" required>
-    <button class="font-1-s" type="submit">Enviar</button>
+    <label class="font-1-m label-texto" for="full-name">NOME COMPLETO:</label>
+    <input class="entrada font-1-s" id="full-name" name="full-name" maxlength="100" pattern="[a-zA-Z ]+" onkeypress="return lettersOnly(event);" required>
+    <label class="font-1-m label-texto" for="phone">TELEFONE:</label>
+    <input class="entrada font-1-s" type="tel" id="phone" name="phone" oninput="formatPhone(this)" maxlength="11" required>
+    <label class="font-1-m label-texto" for="email">EMAIL:</label>
+    <input class="entrada font-1-s" type="email" id="email" name="email" required>
+    <label class="font-1-m label-texto" for="number">NUMERO:</label>
+    <input class="entrada font-1-s" type="number" id="number" name="number" min="1" max="999" required>
+    <button class="font-1-s botao" type="submit">Enviar</button>
   </form>
   <script src="/js/index.js"></script>
   <script src="/js/result.js"></script>
