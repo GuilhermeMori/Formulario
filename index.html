@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario com Validação</title>
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
   <p>Formulário </p>
-
-  <label for="full-name">NOME COMPLETO:</label>
-  <input type="text" id="full-name" name="full-name" pattern="[a-zA-Z ]{1,100}" required>
-  <label for="phone">TELEFONE:</label>
-  <input type="tel" id="phone" name="phone" oninput="formatPhone(this)" required>
-  <label for="email">EMAIL:</label>
-  <input type="email" id="email" name="email" required>
-  <label for="number">NUMERO:</label>
-  <input type="number" id="number" name="number" min="1" max="999" required>
-  <button type="submit">Enviar</button>
+  <form onsubmit="return validateForm()">
+    <label for="full-name">NOME COMPLETO:</label>
+    <input type="text" id="full-name" name="full-name" pattern="[a-zA-Z ]{1,100}" required>
+    <label for="phone">TELEFONE:</label>
+    <input type="tel" id="phone" name="phone" oninput="formatPhone(this)" required>
+    <label for="email">EMAIL:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="number">NUMERO:</label>
+    <input type="number" id="number" name="number" min="1" max="999" required>
+    <button type="submit">Enviar</button>
   </form>
-
 </body>
 
 </html>
