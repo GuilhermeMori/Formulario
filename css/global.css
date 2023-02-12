@@ -1,0 +1,8 @@
+/*Importar as tipografias do formulario*/
+@import "/css/tipografia.css";
+
+/*Importar os dados do arquivo index*/
+@import "/css/index.css";
+
+/*Importar os dados do arquivo Result*/
+@import "/css/result.css";
