@@ -7,22 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario com Validação</title>
 
-  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
-<body class="body">
-  <p class="font-1-xxl titulo">Formulário </p>
-  <form class="formulario-index" onsubmit="return validateForm()">
-    <label class="font-1-m label-texto" for="full-name">NOME COMPLETO:</label>
-    <input class="entrada font-1-s" id="full-name" name="full-name" maxlength="100" pattern="[a-zA-Z ]+" onkeypress="return lettersOnly(event);" required>
-    <label class="font-1-m label-texto" for="phone">TELEFONE:</label>
-    <input class="entrada font-1-s" type="tel" id="phone" name="phone" oninput="formatPhone(this)" maxlength="10" required>
-    <label class="font-1-m label-texto" for="email">EMAIL:</label>
-    <input class="entrada font-1-s" type="email" id="email" name="email" required>
-    <label class="font-1-m label-texto" for="number">NUMERO:</label>
-    <input class="entrada font-1-s" type="number" id="number" name="number" min="1" max="999" required>
-    <button class="font-1-s botao" type="submit">Enviar</button>
+<body class="formulario-body">
+  <p class="font-1-xl formulario-titulo cor-texto-1">Formulário </p>
+  <form class="formulario-index cor-background-1" onsubmit="return validateForm()">
+    <label class="font-1-m formulario-label-texto cor-texto-1" for="full-name">NOME COMPLETO:</label>
+    <input class="formulario-entrada-dados font-1-s cor-texto-2" id="full-name" name="full-name" maxlength="100" pattern="[a-zA-Z ]+" onkeypress="return lettersOnly(event);" required>
+    <label class="font-1-m formulario-label-texto cor-texto-1" for="phone">TELEFONE:</label>
+    <input class="formulario-entrada-dados font-1-s cor-texto-2" type="tel" id="phone" name="phone" oninput="formatPhone(this)" maxlength="10" required>
+    <label class="font-1-m formulario-label-texto cor-texto-1" for="email">EMAIL:</label>
+    <input class="formulario-entrada-dados font-1-s cor-texto-2" type="email" id="email" name="email" required>
+    <label class="font-1-m formulario-label-texto cor-texto-1" for="number">NUMERO:</label>
+    <input class="formulario-entrada-dados font-1-s cor-texto-2" type="number" id="number" name="number" min="1" max="999" required>
+    <button class="font-1-s botao cor-texto-3" type="submit">Enviar</button>
   </form>
   <script src="/js/index.js"></script>
   <script src="/js/result.js"></script>

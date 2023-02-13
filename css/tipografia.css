@@ -1,26 +1,15 @@
-.font-1-xs {
-  font: 500 0.75rem/1.35 sans-serif bold;
-}
-
 .font-1-s {
   font: 500 1rem/1.5 sans-serif;
 }
 
 .font-1-m {
-  font: 500 1.25rem/1rem sans-serif;
-  color: #4182c4;
+  font: 500 1.25rem/1.5rem sans-serif;
 }
 
 .font-1-l {
   font: 500 2rem/0.75rem sans-serif;
-  color: #4182c4;
 }
 
 .font-1-xl {
-  font: 600 3rem/1 sans-serif;
-  color: #4182c4;
-}
-
-.font-1-xxl {
   font: 700 4rem/1.25 sans-serif;
 }

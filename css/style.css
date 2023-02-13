@@ -1,0 +1,10 @@
+/*Importas Utilitarios*/
+@import "/css/global.css"; /*Importar os estilos gerais*/
+@import "/css/cores.css"; /* Importas as cores do site*/
+@import "/css/tipografia.css"; /*Importar as tipografias do site*/
+
+/*Importar os dados do arquivo referente a primeira pagina index (formulario)*/
+@import "/css/index.css";
+
+/*Importar os dados do arquivo Result, onde aparece o resultado*/
+@import "/css/result.css";

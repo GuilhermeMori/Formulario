@@ -1,8 +1,14 @@
-/*Importar as tipografias do formulario*/
-@import "/css/tipografia.css";
+.botao {
+  background-color: var(--cor-botao-1);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-color: var(--cor-botao-1);
+}
 
-/*Importar os dados do arquivo index*/
-@import "/css/index.css";
-
-/*Importar os dados do arquivo Result*/
-@import "/css/result.css";
+.botao:hover {
+  background-color: var(--cor-botao-2);
+  border-color: var(--cor-botao-2);
+}
