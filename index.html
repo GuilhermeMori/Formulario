@@ -12,10 +12,10 @@
 </head>
 
 <body class="background">
-  <p class="font-1-xl formulario-titulo cor-texto-1">Formulário </p>
+  <h1 class="font-1-xl formulario-titulo cor-texto-1">Formulário </h1>
   <form class="formulario-index cor-background-1" onsubmit="return validateForm()">
     <label class="font-1-m formulario-label-texto cor-texto-1" for="full-name">NOME COMPLETO:</label>
-    <input class="formulario-entrada-dados font-1-s cor-texto-2" id="full-name" name="full-name" maxlength="100" pattern="[a-zA-Z ]+" onkeypress="return lettersOnly(event);" required>
+    <input class="formulario-entrada-dados font-1-s cor-texto-2" type="text" id="full-name" name="full-name" maxlength="100" pattern="[a-zA-Z ]+" onkeypress="return lettersOnly(event);" required>
     <label class="font-1-m formulario-label-texto cor-texto-1" for="phone">TELEFONE:</label>
     <input class="formulario-entrada-dados font-1-s cor-texto-2" type="tel" id="phone" name="phone" oninput="formatPhone(this)" maxlength="10" required>
     <label class="font-1-m formulario-label-texto cor-texto-1" for="email">EMAIL:</label>

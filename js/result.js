@@ -8,5 +8,5 @@ resultElement.innerText = result;
 
 //Funcao para voltar ao inicio
 function goToIndex() {
-  window.location.href = "index.html";
+  window.location.href = "index.html"; // Redireciona o usuario para a pagina
 }

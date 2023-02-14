@@ -10,11 +10,6 @@ function validateForm() {
   var condicao2 = number % 5 === 0; // Se o numeber for divisel por 5, irá aparecer o DDD digitado no campo telefone na tela result
   var condicao3 = number % 7 === 0; // Se o numeber for divisel por 7, irá aparecer o dominio de email digitado no campo email na tela result
 
-  if (phone.length < 10) {
-    // Se o número de telefone tiver menos de 10 dígitos, exibe uma mensagem de erro
-    alert("Preencha o número de telefone corretamente.");
-    return;
-  }
   // Verifica se o "numero" atende algumas da condições do exercicio.
   let result = "";
 
@@ -36,6 +31,12 @@ function validateForm() {
     //Irá dizer Quantidade de letras do Nome Completo, excluindo os espaços e  Quantidade de caracteres excluindo @ e pontos do e-mail.
   }
 
+  if (phone.length < 10) {
+    // Se o número de telefone tiver menos de 10 dígitos, exibe uma mensagem de erro
+    alert("Preencha o número de telefone corretamente.");
+    return;
+  }
+
   // Codifica o resultado como um componente de URI e abre uma nova janela com uma URL contendo o parâmetro de resultado.
   const encodedResult = encodeURIComponent(result); // codifica a string "result" para que possa ser enviada como parte de uma URL
   const url = `result.html?result=${encodedResult}`; // cria uma URL para a página "result.html" com um parâmetro chamado "result" contendo a string "encodedResult"
@@ -51,7 +52,7 @@ function formatPhone(input) {
   // Remove qualquer caractere que não seja um dígito
   const phoneNumber = input.value.replace(/\D/g, "");
 
-  // Cria do formato brasileiro de telefone (XX) XXXXX-XXXX
+  // Cria do formato brasileiro de telefone (XX) XXXX-XXXX
   const formattedPhoneNumber = phoneNumber.replace(
     /(\d{2})(\d{4})(\d{4})/,
     "($1)$2-$3"
